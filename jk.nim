@@ -1,8 +1,15 @@
+import os
+import times
+import strutils
+
 const
   fizzBuzz = "FizzBuzz_hogehoge"
   fizz     = "Fizzかなああああ"
   buzz     = "Buzzうが"
+  hoge     = "ほげほげ"
 
-echo fizzBuzz
-echo fizz
-echo buzz
+for i in 1..2000:
+  echo fizzBuzz
+  echo fizz
+  echo buzz
+  echo hoge
