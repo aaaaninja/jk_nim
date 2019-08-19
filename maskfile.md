@@ -4,17 +4,17 @@ build
 ### build debug
 
 ```sh
-nim c --outdir:dist/debug jk.nim
+fd . src/ | xargs --replace nim c --outdir:dist/debug {}
 ```
 
 ### build release
 
 ```sh
-nim c --outdir:dist/release -d:release jk.nim
+fd . src/ | xargs --replace nim c --outdir:dist/release -d:release {}
 ```
 
 ### build run
 
 ```sh
-nim c -r jk.nim
+fd . src/ | xargs --replace nim c --outdir:dist/debug -r {}
 ```
