@@ -6,5 +6,4 @@ const aaaa = [1,2,3,4]
 echo aaaa
 echo aaaa[3]
 
-for i in walkDirRec("."):
-  echo i
+echo (toSeq walkFiles("./*"))
